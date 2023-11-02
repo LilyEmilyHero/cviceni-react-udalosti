@@ -3,7 +3,15 @@
 export const Bonus = () => {
   return (
     <>
-      Odkaz: <a href="https://www.czechitas.cz/">www.czechitas.cz</a>
+      Odkaz:{' '}
+      <a
+        href="https://www.czechitas.cz/"
+        onClick={() => {
+          confirm('Přejete si stránku?');
+        }}
+      >
+        www.czechitas.cz
+      </a>
       <hr />
       Formulář:
       <form>
